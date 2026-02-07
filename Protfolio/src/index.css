@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-accent: var(--color-accent);
+    --color-accent-hover: var(--color-accent-hover);
+    --color-light: var(--color-light);
+    /* Backgrounds */
+    --color-card: var(--color-card);
+    /* Card backgrounds */
+}
+
+@layer base {
+    :root {
+        /* Light Mode (Default) */
+        --color-primary: #0f172a;
+        /* Slate 900 - Headings */
+        --color-secondary: #334155;
+        /* Slate 700 - Body Text */
+        --color-accent: #3b82f6;
+        /* Blue 500 - Links/Buttons */
+        --color-accent-hover: #2563eb;
+        /* Blue 600 */
+        --color-light: #f8fafc;
+        /* Slate 50 - Page Background */
+        --color-card: #ffffff;
+        /* White - Card Background */
+    }
+
+    :root.dark {
+        /* Dark Mode Overrides */
+        --color-primary: #f8fafc;
+        /* Slate 50 - Headings (Inverted) */
+        --color-secondary: #cbd5e1;
+        /* Slate 300 - Body Text (Lighter) */
+        --color-accent: #60a5fa;
+        /* Blue 400 - Needs to be slightly lighter in dark mode */
+        --color-accent-hover: #3b82f6;
+        /* Blue 500 */
+        --color-light: #0f172a;
+        /* Slate 900 - Page Background */
+        --color-card: #1e293b;
+        /* Slate 800 - Card Background */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        /* Apply bg-light (which is now dynamic) globaly */
+        @apply font-inter bg-light text-secondary overflow-x-hidden transition-colors duration-300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins text-primary;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-500;
+    }
+}
