@@ -32,7 +32,7 @@ const Hero = () => {
                     >
                         Niyal Ahmed N.
                         <br />
-                        <span className="text-secondary">Front-End Developer.</span>
+                        <span className="text-secondary">Full Stack Developer</span>
                     </motion.h1>
 
                     <motion.p

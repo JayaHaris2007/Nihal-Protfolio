@@ -1,14 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Layout, Blocks, Globe, Database } from 'lucide-react';
+import { Code, Layout, Blocks, Globe, Database, Server } from 'lucide-react';
 
 const skills = [
     { name: 'HTML5', level: 'Advanced', icon: <Globe size={32} /> },
     { name: 'CSS3', level: 'Advanced', icon: <Layout size={32} /> },
     { name: 'JavaScript', level: 'Intermediate', icon: <Code size={32} /> },
     { name: 'React.js', level: 'Intermediate', icon: <Blocks size={32} /> },
+    { name: 'Node.js', level: 'Intermediate', icon: <Server size={32} /> },
     { name: 'Tailwind CSS', level: 'Advanced', icon: <Layout size={32} /> },
-    { name: 'Git', level: 'Basic', icon: <Database size={32} /> },
+    { name: 'Cloud Firestore', level: 'Intermediate', icon: <Database size={32} /> },
+    { name: 'PayPal Integration', level: 'Intermediate', icon: <Code size={32} /> },
+    { name: 'API Integration', level: 'Intermediate', icon: <Globe size={32} /> },
 ];
 
 const Skills = () => {

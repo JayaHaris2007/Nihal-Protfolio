@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { User } from 'lucide-react';
-import profileImg from '../assets/profile.jpg';
+import profileImg from '../assets/profile.jpeg';
 
 const About = () => {
     return (
@@ -27,11 +27,10 @@ const About = () => {
                         <div className="w-20 h-1.5 bg-accent mb-8 rounded-full"></div>
 
                         <p className="text-secondary text-lg leading-relaxed mb-6">
-                            I am a dedicated Front-End Developer and a 3rd year Computer Science Engineering student at Sankara Polytechnic College.
+                            I am a dedicated Full Stack MERN Developer and a 3rd year Computer Science Engineering student at Sankara Polytechnic College.
                         </p>
                         <p className="text-secondary text-lg leading-relaxed mb-6">
-                            I specialize in building responsive, accessible, and visually appealing web applications using modern technologies.
-                            I enjoy solving UI challenges and continuously improving my development skills.
+                            I specialize in building scalable, responsive, and user-friendly web applications using the MERN stack. I enjoy developing both frontend and backend solutions, designing efficient APIs, managing databases, and creating seamless user experiences. I am passionate about solving real-world problems and continuously enhancing my full stack development skills.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mt-8">
@@ -40,7 +39,7 @@ const About = () => {
                                 <span className="text-sm text-secondary">CSE Student</span>
                             </div>
                             <div className="bg-light p-4 rounded-lg border border-slate-100 dark:border-slate-800">
-                                <span className="block text-accent font-bold text-xl mb-1">Front-End</span>
+                                <span className="block text-accent font-bold text-xl mb-1">MERN Stack</span>
                                 <span className="text-sm text-secondary">Specialization</span>
                             </div>
                         </div>
