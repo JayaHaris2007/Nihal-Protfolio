@@ -30,7 +30,7 @@ const Hero = () => {
                         transition={{ delay: 0.4, duration: 0.8 }}
                         className="text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight"
                     >
-                        Niyal Ahmed N.
+                        Niyal Ahmed N
                         <br />
                         <span className="text-secondary">Full Stack Developer</span>
                     </motion.h1>
