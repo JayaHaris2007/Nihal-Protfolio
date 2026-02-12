@@ -23,10 +23,12 @@ const Contact = () => {
                                 </p>
                             </div>
 
+
+
                             <div className="space-y-4">
                                 <div className="flex items-center gap-4">
                                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                                    <span className="text-sm text-blue-100">Front-End Development</span>
+                                    <span className="text-sm text-blue-100">Full Stack Development</span>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <div className="w-2 h-2 bg-accent rounded-full"></div>
